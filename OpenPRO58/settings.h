@@ -20,8 +20,8 @@
 // === RSSI ====================================================================
 
 // RSSI default raw range.
-#define RSSI_MIN_VAL 1440
-#define RSSI_MAX_VAL 4000
+#define RSSI_MIN_VAL 640 
+#define RSSI_MAX_VAL 1600
 
 // 75% threshold, when channel is printed in spectrum.
 #define RSSI_SEEK_FOUND 75

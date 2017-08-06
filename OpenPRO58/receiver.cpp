@@ -49,8 +49,8 @@ namespace Receiver {
     void setActiveReceiver(ReceiverId receiver) {
         #ifdef USE_DIVERSITY
 
-                digitalWrite(PIN_LED_A, receiver == ReceiverId::A);
-                digitalWrite(PIN_LED_B, receiver == ReceiverId::B);
+                digitalWrite(PIN_LED_A, receiver != ReceiverId::A);
+                digitalWrite(PIN_LED_B, receiver != ReceiverId::B);
                 digitalWrite(PIN_SW, receiver == ReceiverId::A);             
         #else
             digitalWrite(PIN_LED_A, HIGH);

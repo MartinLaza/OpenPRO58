@@ -10,6 +10,7 @@
 #include "receiver.h"
 
 
+
 struct EepromSettings {
     uint32_t magic;
     uint8_t startChannel;
@@ -42,8 +43,8 @@ struct EepromSettings {
     void markDirty();
 
     void initDefaults();
-};
 
+};
 
 PROGMEM const struct {
     uint32_t magic = EEPROM_MAGIC;

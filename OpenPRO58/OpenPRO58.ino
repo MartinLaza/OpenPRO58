@@ -25,6 +25,7 @@ void setup() {
   setupPins();
   StateMachine::setup();
   Ui::setup();
+
   Receiver::setActiveReceiver(Receiver::ReceiverId::B);
   Buttons::registerChangeFunc(globalMenuButtonHandler);
  // Switch to initial state.
